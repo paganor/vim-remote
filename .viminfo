@@ -6,16 +6,21 @@
 
 
 # hlsearch on (H) or off (h):
-~H
+~h
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:q
-:wq
 :q!
+:q
+:PluginInstall
+:wq
 :NERDTreeToggle
 :help NERD_tree.txt
+:NERDtreetoggle
+:NERDtreeToggle
+:source %
+:helptags
 :NERD_tree
 :Helptags
 :help Powerline
@@ -49,22 +54,30 @@ $
 	" "
 
 # File marks:
-'0  1  0  ~/.viminfo
-'1  1  0  ~/.ciminfo
-'2  1  0  ~/.vimrc
-'3  6  0  ~/test/HelloWorld.java
-'4  3  1  ~/test/HelloWorld.java
-'5  1  27  ~/.vimrc
-'6  1  0  ~/.vim/autoload/pathogen.vim
-'7  166  75  ~/.vim/update.sh
-'8  170  26  ~/.vim/update.sh
-'9  8  0  ~/.vim
+'0  17  28  ~/.vimrc
+'1  15  40  ~/.vimrc
+'2  6  0  ~/test/HelloWorld.java
+'3  16  28  ~/.vimrc
+'4  13  27  ~/.vimrc
+'5  11  26  ~/.vimrc
+'6  1  0  ~/.vimrc
+'7  11  0  ~/.vim/.vimrc
+'8  16  17  ~/.vim/.vimrc
+'9  1  0  ~/.viminfo
 
 # Jumplist (newest first):
+-'  17  28  ~/.vimrc
+-'  15  0  ~/.vimrc
+-'  16  0  ~/.vimrc
+-'  6  0  ~/test/HelloWorld.java
+-'  13  0  ~/.vimrc
+-'  11  20  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  11  0  ~/.vim/.vimrc
+-'  1  0  ~/.vim/.vimrc
+-'  16  17  ~/.vim/.vimrc
 -'  1  0  ~/.viminfo
 -'  1  0  ~/.ciminfo
--'  1  0  ~/.vimrc
--'  6  0  ~/test/HelloWorld.java
 -'  3  1  ~/test/HelloWorld.java
 -'  2  1  ~/test/HelloWorld.java
 -'  1  0  ~/.vim/autoload/pathogen.vim
@@ -151,31 +164,37 @@ $
 -'  1  0  ~/Test.java
 -'  2  0  ~/Test.java
 -'  1  0  ~/Test.java
--'  9  13  ~/.bashrc
--'  8  0  ~/.bashrc
--'  1  0  ~/.bashrc
--'  2  0  ~/Test.java
--'  1  0  ~/Test.java
--'  6  0  ~/test/HelloWorld.java
--'  3  1  ~/test/HelloWorld.java
--'  2  1  ~/test/HelloWorld.java
--'  1  0  ~/.vimrc
 
 # History of marks within files (newest to oldest):
 
-> ~/.viminfo
-	"	1	0
-
-> ~/.ciminfo
-	"	1	0
+> ~/[Vundle] Installer
+	"	10	0
+	.	1	0
+	+	36	0
+	+	31	0
+	+	25	0
+	+	18	0
+	+	10	0
+	+	1	0
 
 > ~/.vimrc
-	"	1	0
-	.	1	0
+	"	17	28
+	^	17	29
+	.	17	28
 	+	1	25
 	+	1	7
 	+	1	32
 	+	1	0
+	+	7	20
+	+	22	16
+	+	7	9
+	+	11	27
+	+	13	28
+	+	16	0
+	+	15	40
+	+	17	0
+	+	18	0
+	+	17	28
 
 > ~/test/HelloWorld.java
 	"	6	0
@@ -186,8 +205,34 @@ $
 	+	2	15
 	+	6	0
 
+> ~/NERD_tree_1
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
 > ~/.vim/bundle/nerdtree/doc/NERD_tree.txt
-	"	119	0
+	"	118	4
+
+> ~/.vim/.vimrc
+	"	11	0
+	^	11	61
+	.	11	0
+	+	56	28
+	+	6	2
+	+	5	0
+	+	6	19
+	+	9	0
+	+	8	35
+	+	13	0
+	+	11	0
+
+> ~/.viminfo
+	"	1	0
+
+> ~/.ciminfo
+	"	1	0
 
 > ~/.vim/bundle/NERD_tree_1
 	"	5	3
