@@ -7,14 +7,26 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~MSle0/airline_symbols
+
+# Last Substitute Search Pattern:
+~MSle0~&airline_symbols
+
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:q!
 :q
 :PluginInstall
+:w
+:PluginInstal
 :wq
+:q!
+:help register
+:airline
+:help airline
+:i
 :NERDTreeToggle
 :help NERD_tree.txt
 :NERDtreetoggle
@@ -24,7 +36,7 @@ $
 :NERD_tree
 :Helptags
 :help Powerline
-:w
+:q!!
 
 # Search String History (newest to oldest):
 ? ^\d\{3}ÿ
@@ -39,40 +51,62 @@ $
 "0	CHAR	0
 	n
 ""1	LINE	0
-	execute pathogen#infect()
+	Plugin 'bling/vim-airline'
 "2	LINE	0
-	syntax on
+	" airline plugin config
 "3	LINE	0
-	filetype plugin indent on
+	g:airline_symbols
 "4	LINE	0
-		'thig'
+	let g:airline#extensions#tabline#left_alt_sep = '|'
 "5	LINE	0
-	Plugin 'scrooloose/nerdtree'
+	let g:airline#extensions#tabline#left_sep = ' '
 "6	LINE	0
 	
+"7	LINE	0
+	
+"8	LINE	0
+	Plugin 'Lokaltog/powerline'
+"9	LINE	0
+	Plugin 'bling/vim-bufferline'
 "-	CHAR	0
 	" "
 
 # File marks:
-'0  17  28  ~/.vimrc
-'1  15  40  ~/.vimrc
-'2  6  0  ~/test/HelloWorld.java
-'3  16  28  ~/.vimrc
-'4  13  27  ~/.vimrc
-'5  11  26  ~/.vimrc
-'6  1  0  ~/.vimrc
-'7  11  0  ~/.vim/.vimrc
-'8  16  17  ~/.vim/.vimrc
-'9  1  0  ~/.viminfo
+'0  21  0  ~/.vimrc
+'1  20  0  ~/.vimrc
+'2  27  0  ~/.vimrc
+'3  28  0  ~/.vimrc
+'4  23  60  ~/.vimrc
+'5  29  20  ~/.vimrc
+'6  22  25  ~/.vimrc
+'7  17  0  ~/.vimrc
+'8  5  1  ~/test/HelloWorld.java
+'9  35  0  ~/.vimrc
 
 # Jumplist (newest first):
--'  17  28  ~/.vimrc
+-'  21  0  ~/.vimrc
+-'  20  0  ~/.vimrc
+-'  27  0  ~/.vimrc
+-'  28  0  ~/.vimrc
+-'  23  0  ~/.vimrc
+-'  29  0  ~/.vimrc
+-'  22  0  ~/.vimrc
+-'  17  0  ~/.vimrc
+-'  35  0  ~/.vimrc
+-'  5  1  ~/test/HelloWorld.java
+-'  1  0  ~/test/HelloWorld.java
+-'  32  0  ~/.vimrc
+-'  33  0  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  19  0  ~/.vimrc
+-'  8  4  ~/test/HelloWorld.java
+-'  26  0  ~/.vimrc
+-'  10  5  ~/test/HelloWorld.java
+-'  6  0  ~/test/HelloWorld.java
 -'  15  0  ~/.vimrc
 -'  16  0  ~/.vimrc
--'  6  0  ~/test/HelloWorld.java
 -'  13  0  ~/.vimrc
 -'  11  20  ~/.vimrc
--'  1  0  ~/.vimrc
 -'  11  0  ~/.vim/.vimrc
 -'  1  0  ~/.vim/.vimrc
 -'  16  17  ~/.vim/.vimrc
@@ -89,8 +123,6 @@ $
 -'  9  13  ~/.bashrc
 -'  8  0  ~/.bashrc
 -'  1  0  ~/.bashrc
--'  5  0  ~/test/HelloWorld.java
--'  1  0  ~/test/HelloWorld.java
 -'  2  0  ~/Test.java
 -'  1  0  ~/Test.java
 -'  2  0  ~/Test.java
@@ -148,39 +180,15 @@ $
 -'  9  13  ~/.bashrc
 -'  8  0  ~/.bashrc
 -'  1  0  ~/.bashrc
--'  2  0  ~/Test.java
--'  1  0  ~/Test.java
--'  2  0  ~/Test.java
--'  1  0  ~/Test.java
--'  2  0  ~/Test.java
--'  1  0  ~/Test.java
--'  2  0  ~/Test.java
--'  1  0  ~/Test.java
--'  2  0  ~/Test.java
--'  1  0  ~/Test.java
--'  2  0  ~/Test.java
--'  1  0  ~/Test.java
--'  2  0  ~/Test.java
--'  1  0  ~/Test.java
 -'  2  0  ~/Test.java
 -'  1  0  ~/Test.java
 
 # History of marks within files (newest to oldest):
 
-> ~/[Vundle] Installer
-	"	10	0
-	.	1	0
-	+	36	0
-	+	31	0
-	+	25	0
-	+	18	0
-	+	10	0
-	+	1	0
-
 > ~/.vimrc
-	"	17	28
-	^	17	29
-	.	17	28
+	"	21	0
+	^	21	27
+	.	21	27
 	+	1	25
 	+	1	7
 	+	1	32
@@ -195,15 +203,77 @@ $
 	+	17	0
 	+	18	0
 	+	17	28
+	+	19	26
+	+	26	67
+	+	26	67
+	+	28	47
+	+	28	51
+	+	26	22
+	+	17	0
+	+	17	29
+	+	17	0
+	+	17	26
+	+	17	29
+	+	19	0
+	+	37	0
+	+	33	20
+	+	32	29
+	+	36	5
+	+	35	9
+	+	17	0
+	+	17	0
+	+	19	29
+	+	22	26
+	+	28	0
+	+	29	21
+	+	26	23
+	+	23	61
+	+	27	0
+	+	28	0
+	+	30	0
+	+	26	0
+	+	24	0
+	+	28	0
+	+	27	0
+	+	22	0
+	+	21	27
+
+> ~/[Vundle] Installer
+	"	10	0
+	.	1	0
+	+	115	0
+	+	110	0
+	+	104	0
+	+	97	0
+	+	89	0
+	+	80	0
+	+	71	0
+	+	61	0
+	+	51	0
+	+	43	0
+	+	34	0
+	+	26	0
+	+	18	0
+	+	10	0
+	+	1	0
+
+> /usr/share/vim/vim72/doc/sponsor.txt
+	"	25	25
+
+> ~/.vim/bundle/vim-airline/doc/airline.txt
+	"	51	13
 
 > ~/test/HelloWorld.java
-	"	6	0
-	.	6	0
+	"	5	1
+	^	8	5
+	.	8	4
 	+	6	0
 	+	5	0
 	+	4	36
 	+	2	15
-	+	6	0
+	+	6	1
+	+	10	5
+	+	8	4
 
 > ~/NERD_tree_1
 	"	4	0

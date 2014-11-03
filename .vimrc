@@ -16,10 +16,22 @@ Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'Raimondi/delimitMate'
 
-Plugin 'Lokaltog/powerline'
-
 Plugin 'scrooloose/syntastic'
+
+Plugin 'Lokaltog/powerline'
 ""Plugin area end
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+" airline plugin config
+let g:airline#extensions#tabline#enabled = 1
+
+" color scheme config
+syntax enable
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
+
+"set line numbers on startup
+set nu
