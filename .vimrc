@@ -29,9 +29,15 @@ let g:airline#extensions#tabline#enabled = 1
 
 " color scheme config
 syntax enable
-set background=dark
+set background=light
 let g:solarized_termcolors=256
 colorscheme solarized
 
-"set line numbers on startup
+" set line numbers on startup
 set nu
+
+" custom mappings
+:nmap \e :NERDTreeToggle<CR>
+
+" try from ipad
+set t_Co=256
